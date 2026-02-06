@@ -1,0 +1,113 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:black;
+    color:white;
+    font-family:Arial, sans-serif;
+    line-height:1.6;
+}
+
+nav{
+    background:linear-gradient(90deg,#0f022c,#461111);
+    padding:15px;
+    border-bottom:3px solid red;
+    box-shadow:0 0 15px red;
+}
+
+nav img{
+    border-radius:10px;
+}
+
+nav p{
+    font-weight:bold;
+    margin:5px 0;
+}
+
+nav ul li{
+    display:inline;
+    margin:0 6px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    padding:5px 8px;
+    border-radius:5px;
+}
+
+nav a:hover{
+    background:red;
+}
+
+h1,h2,h3{
+    margin:15px 0;
+    text-shadow:0 0 5px red;
+}
+
+a{
+    color:cyan;
+    text-decoration:none;
+}
+
+a:hover{
+    color:yellow;
+}
+
+table{
+    background:linear-gradient(90deg,#0f022c,#461111);
+    border-collapse:collapse;
+    margin:20px auto;
+    box-shadow:0 0 10px red;
+}
+
+table td, table th{
+    border:2px solid red;
+    padding:15px;
+}
+
+table td:hover{
+    background:#300000;
+}
+
+fieldset{
+    width:80%;
+    margin:20px auto;
+    padding:20px;
+    border:3px solid red;
+    border-radius:12px;
+    background:linear-gradient(90deg,#0f022c,#461111);
+    box-shadow:0 0 15px red;
+}
+
+iframe{
+    border:3px solid red;
+    border-radius:10px;
+    box-shadow:0 0 10px red;
+}
+
+p{
+    margin:10px 0;
+}
+
+footer{
+    background:#111;
+    padding:15px;
+    margin-top:20px;
+    border-top:3px solid red;
+    box-shadow:0 0 10px red;
+}
+
+a[href="#project"]{
+    background:red;
+    padding:8px 15px;
+    border-radius:6px;
+    color:white;
+}
+
+a[href="#project"]:hover{
+    background:darkred;
+}
