@@ -1,114 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Course Registation Form</title>
+    <link rel="stylesheet" href="./day06.css">
 </head>
+
 <body>
-    
-    <h1 align="center">Course Registration Form </h1>
-    <div align="center">
-        <fieldset style="width: 30%;">
-        <legend>
-            Persional Information
-        </legend>
-        <table>
-            <tr>
-                <td><label for="fname" >First Name: </label></td>
-                <td><input type="text" name="fname" id="fname" required></td>
-            </tr>
-            <tr>
-                <td><label for="sname">Surname: </label></td>
-                <td><input type="text" name="sname" id="sname"></td>
-            </tr>
-            <tr>
-                <td><label for="mobnum">Mobile Number: </label></td>
-                <td><input type="tel" name="mobnum" id="mobnum" required></td>
-            </tr>
-            <tr>
-                <td><label for="email">Email: </label></td>
-                <td><input type="email" name="email" id="email" required></td>
-            </tr>
-            <tr>
-                <td><label for="password">Password: </label></td>
-                <td><input type="password" name="password" id="password" required></td>
-            </tr>
-            <tr>
-                <td><label for="cpassword" >Confirm password: </label></td>
-                <td><input type="password" name="cpassword" id="cpassword" required></td>
-            </tr>
-            <tr>
-                <td><label for="dob">DOB: </label></td>
-                <td><input type="date" name="dob" id="dob"></td>
-            </tr>
-            <tr>
-                <td><label for="gender">Gender:</label></td>
-                <td>
-                    <input type="radio" name="gender" id="male"> Male
-                    <input type="radio" name="gender" id="female"> Female
-                    <input type="radio" name="gender" id="other"> Other </td>
-            </tr>
-            <tr>
-                <td><label for="conutry">Select conutry:</label></td>
-                <td>
-                    <select name="country" id="country">
-                        <option value="india">India</option>
-                        <option value="usa">USA</option>
-                        <option value="uk">UK</option>
-                        <option value="australia">Australia</option>
-                        <option value="canada">Canada</option>
-                    </select>
-            </tr>
-            <tr>
-                <td><label for="upload">Upload Picture: </label></td>
-                <td><input type="file" name="upload" id="upload"></td>
-            </tr>
-            <tr>
-                <td><button type="submit">Submit</button></td>
-            </tr>
-        </table>        
-    </fieldset>
-    <fieldset style="width: 30%;">
-        <legend>Course Details</legend>
-        <table>
-            <tr>
-                <td><label for="selectcourse">Select Course</label></td>
-               
-            </tr>
-            <tr>
-                 <td>
-                    <select name="selectcourse" id="selectcourse">
-                        <option value="fullstack">Java Full Stack</option>
-                        <option value="html">HTML</option>
-                        <option value="css">CSS</option>
-                        <option value="javascript">JavaScript</option>
-                        <option value="java">Java</option>
-                        <option value="python">Python</option>
-                    </select>
-                 </td>
-            </tr>
-            <tr>
-                <td><label for="mode">Mode of Learning: </label></td>
-                <td>
-                    <input type="checkbox" name="mode" id="online"> Online
-                    <input type="checkbox" name="mode" id="offline"> Offline
-                </td>
-            </tr>
-            <tr>
-                <td><label for="comment">Comments</label>
-                </td>
-                
-            </tr>
-            <tr>
-                <td><textarea name="comment" id="comment" cols="30" rows="5"></textarea></td>
-            </tr>
-            <tr>
-                <td><button type="submit">Submit</button></td>
-            </tr>
-        </table>
-    </fieldset>
+
+    <h1 class="heading">Course Registration Form </h1>
+    <div>
+        <form action="#">
+            <fieldset>
+                <legend>
+                    Personal Information
+                </legend>
+                <table>
+                    <tr>
+                        <td><label for="fname">First Name </label></td>
+                        <td><input placeholder="Ex. Himanshu" type="text" name="fname" id="fname" required>
+                            <p>Enter Your first Name</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="sname">Surname </label></td>
+                        <td><input placeholder="Ex. V" type="text" name="sname" id="sname">
+                            <p>Enter Your first Sure Name</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="mobnum">Mobile Number </label></td>
+                        <td><input placeholder="+91 0123456789" type="tel" name="mobnum" id="mobnum" required>
+                            <p>Enter Your 10 digits Mobile Number </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="email">Email </label></td>
+                        <td><input placeholder="your_mail@gmail.com" type="email" name="email" id="email" required>
+                            <p>Enter your valid mail id</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="password">Password </label></td>
+                        <td><input  pattern="(?=.*[A-Z])(?=.*[a-z])(?=.*\d).{8,}" type="password" name="password" id="password" required>
+                            <p>Enter Your password that contains </p>
+                            <ul>
+                                <li class="list_pwd_valid">At least 8 characters</li>
+                                <li class="list_pwd_valid">At least one uppercase letter</li>
+                                <li class="list_pwd_valid">At least one lowercase letter</li>
+                                <li class="list_pwd_valid">At least one number</li>
+                                <li class="list_pwd_valid">At least one special character</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="cpassword">Confirm password </label></td>
+                        <td><input type="password" name="cpassword" id="cpassword" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="dob">DOB </label></td>
+                        <td><input type="date" name="dob" id="dob"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="gender">Gender</label></td>
+                        <td>
+                            <input type="radio" name="gender" id="male"> Male
+                            <input type="radio" name="gender" id="female"> Female
+                            <input type="radio" name="gender" id="other"> Other
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="conutry">Select conutry</label></td>
+                        <td>
+                            <select name="country" id="country">
+                                <option value="india">India</option>
+                                <option value="usa">USA</option>
+                                <option value="uk">UK</option>
+                                <option value="australia">Australia</option>
+                                <option value="canada">Canada</option>
+                            </select>
+                    </tr>
+                    <tr>
+                        <td><label for="upload">Upload Picture: </label></td>
+                        <td><input type="file" name="upload" id="upload"></td>
+                    </tr>
+                    <tr>
+                        <td><button type="submit">Submit</button></td>
+                    </tr>
+                </table>
+            </fieldset>
+        </form>
+
+        <form action="">
+            <fieldset>
+                <legend>Course Details</legend>
+                <table>
+                    <tr>
+                        <td><label for="selectcourse">Select Course</label></td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            <select name="selectcourse" id="selectcourse">
+                                <option value="fullstack">Java Full Stack</option>
+                                <option value="html">HTML</option>
+                                <option value="css">CSS</option>
+                                <option value="javascript">JavaScript</option>
+                                <option value="java">Java</option>
+                                <option value="python">Python</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="mode">Mode of Learning: </label></td>
+                        <td>
+                            <input type="checkbox" name="mode" id="online"> Online
+                            <input type="checkbox" name="mode" id="offline"> Offline
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="comment">Comments</label>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td><textarea placeholder="comment" name="comment" id="comment" cols="30" rows="5"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><button type="submit">Submit</button></td>
+                    </tr>
+                </table>
+            </fieldset>
+        </form>
     </div>
 
 </body>
+
 </html>
